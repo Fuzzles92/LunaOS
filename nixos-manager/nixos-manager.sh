@@ -35,7 +35,7 @@ update_flake() {
 
 rebuild_nixos() {
     echo -e "\n${NIX_BLUE}▶ Rebuilding NixOS for $HOST...${NC}\n"
-    nixos-rebuild switch --flake "$FLAKE_DIR#$HOST" --show-trace
+    sudo nixos-rebuild switch --flake "$FLAKE_DIR#$HOST" --show-trace
     echo -e "\n${GREEN}✔ Rebuild complete.${NC}"
     echo
     
