@@ -1,5 +1,5 @@
 #==========================================#
-#            Luna Home Manager             #
+#            Luna Home Manager
 #==========================================#
 
 { config, pkgs, ... }:
@@ -7,6 +7,8 @@
 {
   imports = [
     ./mangohud.nix
+    ./gnome.nix
+    #./kde.nix
   ];
 
   home.username = "fuzzles";

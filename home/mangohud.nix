@@ -1,5 +1,5 @@
 #==========================================#
-#         Mango Hub Configuration          #
+#         Mango Hub Configuration
 #==========================================#
 
 { config, pkgs, ... }:

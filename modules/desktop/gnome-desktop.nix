@@ -1,5 +1,5 @@
 #==========================================#
-#            GNOME Configuation            #
+#            GNOME Configuation
 #==========================================#
 
 { config, pkgs, ... }:
@@ -7,12 +7,12 @@
 {
 
 #==========================================#
-#  GNOME Desktop                           #
+#  GNOME Desktop
 #==========================================#
 services.xserver.displayManager.gdm = {
 				enable = true;
-# 				autoLogin.enable = true;
-# 				autoLogin.user = "fuzzles";
+ 				autoLogin.enable = true;
+ 				autoLogin.user = "fuzzles";
 };
 
 services.xserver.desktopManager.gnome.enable = true;
@@ -21,7 +21,7 @@ services.xserver.excludePackages = with pkgs; [
   ];
 
 #==========================================#
-#  GNOME Excludes                          #
+#  GNOME Excludes
 #==========================================#
 environment.gnome.excludePackages = with pkgs.gnome; [
 	# Uncommented Excludes
@@ -57,22 +57,13 @@ environment.gnome.excludePackages = with pkgs.gnome; [
   ];
 
 #==========================================#
-#  System Packages                         #
+#  System Packages
 #==========================================#
 environment.systemPackages = with pkgs; [
 	# Gnome Extra Applications
-	gnome-tweaks		# Additional Gnome Changes
-	ignition		    # Start up Applications
-	pika-backup		    # Backup Application
-	impression		    # ISO Image Writer
-
-
-	# Gnome Extensions
-	gnomeExtensions.appindicator
-	gnomeExtensions.blur-my-shell
-	gnomeExtensions.dash-to-dock
-	gnomeExtensions.caffeine
-	gnomeExtensions.gsconnect
-	gnomeExtensions.logo-menu
+	#gnome-tweaks		# Additional Gnome Changes
+	#ignition		    # Start up Applications
+	#pika-backup		    # Backup Application
+	#impression		    # ISO Image Writer
 	];
 }

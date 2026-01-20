@@ -4,18 +4,7 @@
 
 { config, pkgs, ... }:
 
-
-  #==========================================#
-  #              Desktop Switcher            #
-  #==========================================#
-  let
-    desktop = "kde";
-    desktops = {
-      kde = ./modules/desktop/kde-desktop.nix;
-      gnome = ./modules/desktop/gnome-desktop.nix;
-      };
-  in
-  {
+{
 
   #==========================================#
   #                Imports                   #
@@ -26,10 +15,10 @@
       ./modules/development.nix
       ./modules/flatpak.nix
       ./modules/secure-boot.nix
+      ./modules/desktop
       ./modules/gaming
       ./modules/hardware
       ./modules/system
-      desktops.${desktop}
     ];
 
 

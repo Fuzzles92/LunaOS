@@ -35,10 +35,10 @@ update_flake() {
 
 rebuild_nixos() {
     echo -e "\n${NIX_BLUE}▶ Rebuilding NixOS for $HOST...${NC}\n"
-    sudo nixos-rebuild switch --flake "$FLAKE_DIR#$HOST" --show-trace
+    nixos-rebuild switch --flake "$FLAKE_DIR#$HOST" --show-trace
     echo -e "\n${GREEN}✔ Rebuild complete.${NC}"
     echo
-    
+
     read -rp "$(echo -e "${YELLOW}Reboot now? (Y/N): ${NC}")" reboot_choice
     if [[ "$reboot_choice" =~ ^[Yy]$ ]]; then
         echo -e "${GREEN}Rebooting...${NC}"
@@ -63,7 +63,7 @@ rollback_nixos() {
         echo -e "${NIX_BLUE}\n▶ Rolling back to previous generation...${NC}\n"
         nixos-rebuild switch --rollback
         echo -e "${GREEN}\n✔ Rolled back to previous generation.${NC}\n"
-        
+
         read -rp "$(echo -e "${YELLOW}Reboot now? (Y/N): ${NC}")" reboot_choice
         if [[ "$reboot_choice" =~ ^[Yy]$ ]]; then
             echo -e "${GREEN}Rebooting...${NC}"

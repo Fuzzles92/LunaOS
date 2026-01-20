@@ -20,8 +20,6 @@
   # Declarative Flatpak apps
   services.flatpak.packages = [
     "com.github.tchx84.Flatseal"     # Manage Flatpak permissions
-    "org.gimp.GIMP"                  # GIMP image editor
-    "de.leopoldluley.Clapgrep"       # Search through all your files
   ];
 
   # Enable automatic Flatpak updates
