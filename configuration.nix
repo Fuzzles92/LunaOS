@@ -28,6 +28,7 @@
       ./modules/secure-boot.nix
       ./modules/gaming
       ./modules/hardware
+      ./modules/system
       desktops.${desktop}
     ];
 
