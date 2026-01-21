@@ -1,9 +1,9 @@
 #==========================================#
-#              Luna Flake                  #
+#             ☾  Luna Flake
 #==========================================#
 
 {
-  description = "Luna OS";
+  description = "Luna";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
@@ -34,7 +34,7 @@
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
 
-          home-manager.users.fuzzles = import ./home;
+          home-manager.users.fuzzles = import ./home-manager;
         }
 
         # Flatpak as a NixOS module

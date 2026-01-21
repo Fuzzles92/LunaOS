@@ -1,5 +1,5 @@
 #==========================================#
-#       My Nix Hardware Configuation       #
+#       ☾ Luna Hardware Configuation
 #==========================================#
 
 { config, lib, pkgs, modulesPath, ... }:

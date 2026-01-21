@@ -1,5 +1,5 @@
 #==========================================#
-#        GNOME Home Manager Config
+#       ☾ Luna GNOME Home Manager
 #==========================================#
 
 { config, pkgs, ... }:
@@ -42,7 +42,7 @@
     };
     
   # --------------------------
-  # Interface settings
+  # Interface Settings
   # --------------------------
   "org/gnome/desktop/interface" = {
     gtk-theme = "Adwaita";
@@ -57,16 +57,19 @@
     };
 
   # --------------------------
-  # Background / wallpaper
+  # Background / Wallpaper
   # --------------------------
   "org/gnome/desktop/background" = {
-    picture-uri = "file:///etc/nixos/wallpaper/luna-os-abstract.png.jpg";
-    picture-uri-dark = "file:///etc/nixos/wallpaper/luna-os-abstract.png.jpg";
+    picture-uri = "file:///etc/nixos/home-manager/luna-wallpapers/luna-os-abstract.png";
+    picture-uri-dark = "file:///etc/nixos/home/luna-wallpapers/luna-os-abstract.png";
     picture-options = "zoom";
     primary-color = "#000000";
     secondary-color = "#000000";
     };
 
+  # --------------------------
+  # Extension Settings
+  # --------------------------
     # Dash to Dock
     "org/gnome/shell/extensions/dash-to-dock" = {
       dock-position = "BOTTOM";

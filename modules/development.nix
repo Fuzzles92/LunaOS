@@ -1,13 +1,13 @@
 #==========================================#
-#          Development Configuration       #
+#         ☾  Luna Development
 #==========================================#
 
 { config, pkgs, fresh, ... }:
 
 {
-  #==========================================#
-  # System Packages                          #
-  #==========================================#
+  #--------------------------
+  # System Packages
+  #--------------------------
   environment.systemPackages = with pkgs; [
     vscodium             # Code Editor
     podman               # Container Engine
@@ -16,9 +16,9 @@
     fresh.packages.${pkgs.stdenv.hostPlatform.system}.default  # Fresh Editor
   ];
 
-  #==========================================#
-  # Enable Applications                      #
-  #==========================================#
+  #--------------------------
+  # Enable Applications
+  #--------------------------
 
   programs.git = {
     enable = true;
@@ -40,8 +40,8 @@
     defaultNetwork.settings.dns_enabled = true;
   };
 
-  #==========================================#
-  # Enable Services                          #
-  #==========================================#
+  #--------------------------
+  # Enable Services
+  #--------------------------
   services.teamviewer.enable = true;     # Teamviewer
 }
