@@ -209,7 +209,7 @@ extension_defaults = widget_defaults.copy()
 
 screens = [
     Screen(
-        wallpaper = '/etc/nixos/home-manager/luna-wallpapers/luna-os-abstract.png',
+        wallpaper = '/etc/nixos/assets/wallpapers/luna-os-abstract.png',
         wallpaper_mode = 'fill',
 
         top=bar.Bar(

@@ -8,9 +8,9 @@
   imports = [
     ./luna-helper.nix
     ./mangohud.nix
-    ./gnome.nix
+    #./gnome.nix
     #./kde.nix
-    ./qtile.nix
+    #./qtile.nix
   ];
 
   home.username = "fuzzles";

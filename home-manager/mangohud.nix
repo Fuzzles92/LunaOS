@@ -10,7 +10,6 @@
     text = ''
       ########################################
       # MangoHud Configuration (Luna OS)
-      # Generated via MangoJuice
       # Managed declaratively by Home Manager
       ########################################
 

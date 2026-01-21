@@ -20,6 +20,6 @@
 
   # optional: copy icon from flake
   home.file.".local/share/icons/hicolor/scalable/apps/luna-helper.svg".source =
-    ../luna-icons/luna-helper.svg;
+    ../assets/icons/luna-helper/luna-helper.svg;
 }
 

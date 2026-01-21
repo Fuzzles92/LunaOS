@@ -5,7 +5,7 @@ set -euo pipefail
 # Ensure script is run as root
 # ─────────────────────────────────────────────────────────────
 if [[ "$EUID" -ne 0 ]]; then
-  echo "⚠️  Please run as root: sudo ./nixos-manager.sh"
+  echo "⚠️  Please run as root: sudo ./luna-helper.sh"
   exit 1
 fi
 
@@ -14,6 +14,7 @@ fi
 # ─────────────────────────────────────────────────────────────
 GREEN="\033[0;32m"
 YELLOW="\033[38;2;255;230;0m"
+LUNA_PURPLE=""
 NIX_BLUE="\033[38;2;0;114;198m"
 NC="\033[0m"
 
@@ -100,7 +101,7 @@ list_generations() {
 while true; do
     clear
     echo -e "${NIX_BLUE}=============================================${NC}"
-    echo -e "${NIX_BLUE}               NixOS Manager                 ${NC}"
+    echo -e "${NIX_BLUE}               Luna Helper                   ${NC}"
     echo -e "${NIX_BLUE}=============================================${NC}"
     echo
     echo "System Name: $HOST"

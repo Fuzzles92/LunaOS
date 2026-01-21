@@ -60,8 +60,8 @@
   # Background / Wallpaper
   # --------------------------
   "org/gnome/desktop/background" = {
-    picture-uri = "file:///etc/nixos/home-manager/luna-wallpapers/luna-os-abstract.png";
-    picture-uri-dark = "file:///etc/nixos/home/luna-wallpapers/luna-os-abstract.png";
+    picture-uri = "file:///etc/nixos/assets/wallpapers/luna-wallpapers/luna-os-abstract.png";
+    picture-uri-dark = "file:///etc/nixos/assets/wallpapers/luna-wallpapers/luna-os-abstract.png";
     picture-options = "zoom";
     primary-color = "#000000";
     secondary-color = "#000000";

@@ -11,13 +11,13 @@
   #--------------------------
 
  services.xserver.enable = true;
-  #services.xserver.displayManager.lightdm = {
-		#enable = true;
-		#autoLogin = {
-		#	enable = true;
-		#	user = "fuzzles";
-		#	};
-		#};
+  services.xserver.displayManager.lightdm = {
+		enable = true;
+		autoLogin = {
+			enable = true;
+			user = "fuzzles";
+			};
+		};
   services.xserver.windowManager.qtile = {
   		enable = true;
   		extraPackages = python3Packages: with python3Packages; [
