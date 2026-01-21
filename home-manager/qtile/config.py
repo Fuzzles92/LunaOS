@@ -8,7 +8,6 @@
 import os
 import subprocess
 import sys
-#sys.path.append("/etc/nixos/modules/desktops/qtile")  # Path to your whole folder
 import colors
 from libqtile import bar, layout, qtile, widget
 from libqtile.config import Click, Drag, Group, ScratchPad, DropDown, Key, Match, Screen
@@ -168,16 +167,11 @@ keys.extend([
 #--------------------------
 #  Colour & Themeing
 #--------------------------
-#colors = colors.DoomOne
-#colors = colors.MonokaiPro
-colors = colors.Nord
-#colors = colors.OceanicNext
-#colors = colors.Palenight
-#colors = colors.TomorrowNight
+colors = colors.Luna
 
 layout_theme = {"border_width": 4,
                 "margin": 5,
-                "border_focus": colors[8],
+                "border_focus": colors[7],
                 "border_normal": colors[0]
                 }
 

@@ -11,16 +11,15 @@
   #--------------------------
 
  services.xserver.enable = true;
-  services.xserver.displayManager.lightdm = {
-		enable = true;
-		autoLogin = {
-			enable = true;
-			user = "fuzzles";
-			};
-		};
+  #services.xserver.displayManager.lightdm = {
+		#enable = true;
+		#autoLogin = {
+		#	enable = true;
+		#	user = "fuzzles";
+		#	};
+		#};
   services.xserver.windowManager.qtile = {
   		enable = true;
-  		#configFile = ./qtile/config.py;
   		extraPackages = python3Packages: with python3Packages; [
     		qtile-extras
     		];
